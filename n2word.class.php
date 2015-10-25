@@ -5,7 +5,7 @@
  * @license GPL license v2
  * @copyright aurelle meless
  */
-class number2word {
+class n2word {
 
 	protected 	$lettre=array(
 					"unit"=>array(1 =>'un' ,
