@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 number2word
 ==============
 php class, help you to convert numbers in french words.
@@ -11,11 +10,8 @@ Usage
 php tool, help you to convert number in french words.
 
 ##Usage
-
+```php
 <?php
->>>>>>> origin/master
-
-  <?php
 
     $number = 2015 ;
     $n2word = new n2word()
@@ -23,5 +19,7 @@ php tool, help you to convert number in french words.
     echo $number." converted in french word is  : ".$words;
 
   ?>
+  
+```
 ChangeLog
 --------------
