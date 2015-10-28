@@ -36,7 +36,7 @@ class n2word {
 							1000=>'mille',
 							1000000=>'million',
 							1000000000=>'milliard'));
-	
+
 	protected 	$ban=array(" ", "\t", "\n", "\r", "\0", "\x0B", "\xA0");//bannished chars
 	public 		$number=null;//the number
 	public 		$million_number=null;// the million segment number
@@ -82,9 +82,9 @@ class n2word {
 				}else{
 					$r=$this->lettre['double'][$segment[0].'0'].'-'.$this->lettre['unit'][$segment[1]];
 				}
-				
+
 			}
-				
+
 		}
 		return $r;
 	}
@@ -106,7 +106,7 @@ class n2word {
 			}else {
 				$r=$this->lettre['segment'][$segment[0].'00'].'-'.$this->convertUnit($segment[1].$segment[2]);
 			}
-				
+
 		}else if ($segment<1000) {
 			if ($segment[1]==0 && $segment[2]==0) {
 
@@ -121,7 +121,7 @@ class n2word {
 	/**
 	 *
 	 * @param int $nombre the number that may be literalize.
-	 * @return array the size of the number($nombre) and the segment number. 
+	 * @return array the size of the number($nombre) and the segment number.
 	 */
 	function getBillion($nombre){
 		$n= array('size'=>null,'number'=>null);
@@ -142,7 +142,7 @@ class n2word {
 	 * @param int $nombre the number that may be literalize.
 	 * @param int $start the start index of the segment.
 	 * @param int $pre the offset of parent segment on $nombre as string.
-	 * @return array the size of the number($nombre) and the segment number. 
+	 * @return array the size of the number($nombre) and the segment number.
 	 */
 	function getSegment($nombre,$start,$pre=0){
 		$n= array('size'=>null,'number'=>null);
@@ -205,7 +205,7 @@ class n2word {
 		return $literal;
 	}
 	/**
-	 * 
+	 *
 	 * @param string $car the string to sinitize.
 	 * @return mixed only numbers
 	 */
