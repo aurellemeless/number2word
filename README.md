@@ -1,10 +1,9 @@
 # number2word
 ===============
-===============
 php tool, help you to convert number in french words.
 
-Usage
-===============
+##Usage
+
 <?php
 
 $number = 2015 ;
